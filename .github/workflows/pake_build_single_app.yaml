@@ -18,6 +18,10 @@ on:
         description: 'App URL'
         required: true
         default: 'https://twitter.com/'
+      icon:
+        description: 'App Icon'
+        required: true
+        default: 'https://github.com/rozsazoltan/apps/blob/master/src/icons/helloworld.png'
   workflow_call:
     inputs:
       name:
@@ -96,6 +100,7 @@ jobs:
           TITLE: ${{ inputs.title }}
           NAME_ZH: ${{ inputs.name_zh }}
           URL: ${{ inputs.url }}
+          ICON: ${{ inputs.icon }}
         run: |
           npm install
           npm run build:config
