@@ -44,6 +44,11 @@ on:
         required: true
         type: string
         default: 'https://twitter.com/'
+      icon:
+        description: 'App Icon'
+        required: true
+        type: string
+        default: 'https://github.com/rozsazoltan/apps/blob/master/src/icons/helloworld.png'
 
 jobs:
   build_single_app:
